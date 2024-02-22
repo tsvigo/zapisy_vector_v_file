@@ -20,11 +20,11 @@ Dialog::Dialog(QWidget *parent)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///
   //  std::vector<std::string> example { "This", "is", "a", "test" };
-     std::vector<int> example { 10, 288, 376, 4 };
+     std::vector<unsigned long long> example { 0, 288, 376, 444444 };
     
     std::ofstream output_file("/home/viktor/my_projects_qt_2/zapisy_vector_v_file/example.txt");
     
-    std::ostream_iterator<int> output_iterator(output_file, "\n");
+    std::ostream_iterator<unsigned long long> output_iterator(output_file, "\n");
     std::copy(std::begin(example), std::end(example), output_iterator); 
 /// 
 /// 
